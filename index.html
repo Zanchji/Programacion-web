@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Identificación Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="card-container" id="cardContainer">
+            <div class="card card-front">
+                <div class="card-header">
+                    <span class="badge">Socio Activo</span>
+                </div>
+                <div class="card-body">
+                    <div class="avatar-wrapper">
+                        <img src="https://via.placeholder.com/90" alt="Foto de Perfil" id="userAvatar">
+                    </div>
+                    <h2 class="user-name" id="userName">Emiliano</h2>
+                    <p class="user-role" id="userRole">Desarrollador Software</p>
+                    <div class="card-info">
+                        <small>ID MIEMBRO</small>
+                        <p id="userId">#84920-CL</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-md ripple" id="btnFlip">Ver Reverso</button>
+                </div>
+            </div>
+
+            <div class="card card-back">
+                <div class="card-header">
+                    <h3>Verificación</h3>
+                </div>
+                <div class="card-body qr-section">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=84920-CL" alt="Código QR">
+                    <p class="qr-desc">Escanear para validar credencial</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-md ripple" id="btnFlipBack">Volver al Frente</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

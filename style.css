@@ -1,0 +1,155 @@
+/* VARIABLES Y TEMA MATERIAL DESIGN */
+:root {
+    --md-sys-color-primary: #6200ee;
+    --md-sys-color-surface: #ffffff;
+    --md-sys-color-background: #f5f5f7;
+    --md-sys-color-text: #1c1b1f;
+    --md-sys-color-subtext: #49454f;
+    --md-elevation-1: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12);
+    --md-elevation-3: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+    --radius-large: 16px;
+    --transition-speed: 0.6s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--md-sys-color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ESTRUCTURA Y PERSPECTIVA 3D */
+.container {
+    perspective: 1000px;
+}
+
+.card-container {
+    width: 320px;
+    height: 460px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-container.flipped {
+    transform: rotateY(180deg);
+}
+
+/* ESTILO BASE DE LAS CARAS */
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--md-sys-color-surface);
+    border-radius: var(--radius-large);
+    box-shadow: var(--md-elevation-1);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: var(--md-elevation-3);
+}
+
+/* CARA FRONTAL Y TRASERA */
+.card-front {
+    z-index: 2;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+/* ELEMENTOS MATERIAL */
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.badge {
+    background-color: #e8def8;
+    color: #1d192b;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar-wrapper img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.user-name {
+    font-size: 1.25rem;
+    color: var(--md-sys-color-text);
+    font-weight: 700;
+}
+
+.user-role {
+    font-size: 0.875rem;
+    color: var(--md-sys-color-subtext);
+    margin-bottom: 16px;
+}
+
+.card-info small {
+    font-size: 0.7rem;
+    color: var(--md-sys-color-subtext);
+    letter-spacing: 1px;
+}
+
+.card-info p {
+    font-weight: 500;
+    color: var(--md-sys-color-primary);
+}
+
+.qr-section {
+    justify-content: center;
+    gap: 12px;
+}
+
+.qr-desc {
+    font-size: 0.8rem;
+    color: var(--md-sys-color-subtext);
+}
+
+/* BOTONES MATERIAL DESIGN */
+.btn-md {
+    width: 100%;
+    background-color: var(--md-sys-color-primary);
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 100px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease;
+}
+
+.btn-md:hover {
+    background-color: #3700b3;
+}

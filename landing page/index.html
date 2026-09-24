@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="cell-ula - Celulares de gama alta, reacondicionados y económicos.">
+
+    <title>cell-ula | Tu próximo celular</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="#inicio" class="logo">
+            cell<span>-ula</span>
+        </a>
+
+        <nav id="mainNav">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#celulares">Celulares</a>
+            <a href="#garantia">Garantía</a>
+            <a href="#envios">Envíos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="searchBtn">
+                ⌕
+            </button>
+
+            <button class="icon-btn">
+                ♙
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+                🛒
+                <b id="cartCount">0</b>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main id="inicio">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">
+                    CELULARES DE CALIDAD, AL MEJOR PRECIO
+                </p>
+
+                <h1>
+                    Tu próximo celular está en
+                    <span>cell-ula</span>
+                </h1>
+
+                <p class="hero-text">
+                    Gama alta, reacondicionados y económicos.
+                    Encuentra el celular perfecto para ti, con garantía,
+                    envío seguro y pago en línea.
+                </p>
+
+                <a href="#celulares" class="btn primary">
+                    Ver celulares →
+                </a>
+
+            </div>
+
+
+            <div class="hero-product">
+
+                <div class="glow"></div>
+
+                <div class="phone-art">
+
+                    <div class="phone phone-back">
+                        📱
+                    </div>
+
+                    <div class="phone phone-front">
+                        📱
+                    </div>
+
+                </div>
+
+
+                <div class="hero-price-card">
+
+                    <span class="badge">
+                        MÁS POPULAR
+                    </span>
+
+                    <h2>
+                        iPhone 14 Pro
+                    </h2>
+
+                    <p>
+                        Rendimiento. Cámara. Todo en uno.
+                    </p>
+
+                    <ul>
+                        <li>128 GB de almacenamiento</li>
+                        <li>6 GB de RAM</li>
+                        <li>Cámara principal 48 MP</li>
+                        <li>Batería de larga duración</li>
+                    </ul>
+
+                    <strong>
+                        $12,999 <small>MXN</small>
+                    </strong>
+
+                    <button
+                        class="btn outline add-cart"
+                        data-name="iPhone 14 Pro"
+                        data-price="12999">
+
+                        Comprar ahora →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFICIOS -->
+        <section class="benefits" id="garantia">
+
+            <div>
+
+                <span class="benefit-icon">
+                    ♢
+                </span>
+
+                <div>
+                    <h3>
+                        Garantía incluida
+                    </h3>
+
+                    <p>
+                        Todos nuestros celulares cuentan con garantía de 6 a 12 meses.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <span class="benefit-icon">
+                    ▣
+                </span>
+
+                <div>
+                    <h3>
+                        Envío seguro y rápido
+                    </h3>
+
+                    <p>
+                        Entrega en 2 a 5 días hábiles en todo el país.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <span class="benefit-icon">
+                    ▤
+                </span>
+
+                <div>
+                    <h3>
+                        Pago en línea
+                    </h3>
+
+                    <p>
+                        Compra fácil y segura con tarjeta de crédito o débito.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <span class="benefit-icon">
+                    ♧
+                </span>
+
+                <div>
+                    <h3>
+                        Soporte personalizado
+                    </h3>
+
+                    <p>
+                        ¿Dudas? Estamos aquí para ayudarte.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categories" id="celulares">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    ENCUENTRA EL TUYO
+                </p>
+
+                <h2>
+                    Explora por categoría
+                </h2>
+
+                <p>
+                    Elige la opción que mejor se adapte a ti.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <button
+                    class="category-card"
+                    data-filter="alta">
+
+                    <div class="category-img high">
+                        GAMA<br>ALTA
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Gama alta
+                        </h3>
+
+                        <p>
+                            Lo mejor en tecnología y rendimiento.
+                        </p>
+
+                        <span>
+                            Ver gama alta →
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-filter="refurbished">
+
+                    <div class="category-img refurb">
+                        REACONDI-<br>CIONADOS
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Reacondicionados
+                        </h3>
+
+                        <p>
+                            Calidad garantizada a un mejor precio.
+                        </p>
+
+                        <span>
+                            Ver reacondicionados →
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-filter="economico">
+
+                    <div class="category-img budget">
+                        BUEN<br>PRECIO
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Económicos
+                        </h3>
+
+                        <p>
+                            Grandes funciones, precios accesibles.
+                        </p>
+
+                        <span>
+                            Ver económicos →
+                        </span>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCTO DESTACADO -->
+        <section class="featured">
+
+            <div class="featured-image">
+
+                <div class="featured-phone">
+                    📱
+                </div>
+
+            </div>
+
+
+            <div class="featured-info">
+
+                <span class="badge purple">
+                    MEJOR RELACIÓN CALIDAD-PRECIO
+                </span>
+
+                <h2>
+                    Samsung Galaxy A54 5G
+                </h2>
+
+                <p>
+                    Rendimiento, cámara y estilo en un solo dispositivo.
+                </p>
+
+
+                <div class="specs">
+
+                    <div>
+                        <b>128 GB</b>
+                        <small>Almacenamiento</small>
+                    </div>
+
+                    <div>
+                        <b>8 GB</b>
+                        <small>RAM</small>
+                    </div>
+
+                    <div>
+                        <b>50 MP</b>
+                        <small>Cámara principal</small>
+                    </div>
+
+                    <div>
+                        <b>5,000 mAh</b>
+                        <small>Batería</small>
+                    </div>
+
+                </div>
+
+
+                <div class="featured-bottom">
+
+                    <strong>
+                        $7,999 <small>MXN</small>
+                    </strong>
+
+                    <button
+                        class="btn primary add-cart"
+                        data-name="Samsung Galaxy A54 5G"
+                        data-price="7999">
+
+                        Comprar ahora →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="featured-details">
+
+                <p>
+                    ✓ Pantalla Super AMOLED 6.4"
+                </p>
+
+                <p>
+                    ✓ 5G para mayor velocidad
+                </p>
+
+                <p>
+                    ✓ Cámara frontal de 32 MP
+                </p>
+
+                <p>
+                    ✓ Android
+                </p>
+
+                <p class="color-label">
+                    Colores disponibles
+                </p>
+
+                <div class="dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
+        <section class="products-section">
+
+            <div class="section-heading center">
+
+                <p class="eyebrow">
+                    NUESTROS CELULARES
+                </p>
+
+                <h2>
+                    Elige el que va contigo
+                </h2>
+
+            </div>
+
+
+            <div class="filters">
+
+                <button
+                    class="filter active"
+                    data-filter="all">
+                    Todos
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="alta">
+                    Gama alta
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="refurbished">
+                    Reacondicionados
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="economico">
+                    Económicos
+                </button>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="productGrid">
+            </div>
+
+        </section>
+
+
+        <!-- INFORMACION / TARJETAS -->
+        <section class="info-grid" id="envios">
+
+            <article class="info-card">
+
+                <span class="card-icon">
+                    ↩
+                </span>
+
+                <h3>
+                    Política de devoluciones
+                </h3>
+
+                <p>
+                    Tienes 15 días para devolver tu celular
+                    en caso de que no sea lo que esperabas.
+                    El producto debe estar en su empaque original
+                    y en perfecto estado.
+                </p>
+
+                <button
+                    class="text-btn"
+                    data-open="returns">
+
+                    Ver más →
+
+                </button>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <span class="card-icon">
+                    💬
+                </span>
+
+                <h3>
+                    Atención por WhatsApp
+                </h3>
+
+                <p>
+                    ¿Necesitas asesoría rápida antes de comprar? 
+                    Escríbenos directamente y te ayudamos a elegir tu próximo celular.
+                </p>
+
+                <a 
+                    href="https://wa.me/5215500000000?text=Hola,%20quisiera%20recibir%20información%20sobre%20un%20celular." 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn-whatsapp-card">
+
+                    Enviar mensaje →
+
+                </a>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <span class="card-icon">
+                    ▣
+                </span>
+
+                <h3>
+                    Envíos
+                </h3>
+
+                <p>
+                    Envíos a todo México.
+                    Tu celular llega en 2 a 5 días hábiles,
+                    con seguimiento en tiempo real.
+                </p>
+
+                <button
+                    class="text-btn"
+                    data-open="shipping">
+
+                    Ver condiciones →
+
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <!-- FORMULARIO DE CONTACTO / REGISTRO -->
+        <section class="contact-section" id="contacto">
+
+            <div class="section-heading center">
+
+                <p class="eyebrow">
+                    CONTÁCTAME
+                </p>
+
+                <h2>
+                    Envíanos un mensaje
+                </h2>
+
+                <p>
+                    Déjanos tus datos de contacto y te responderemos a la brevedad.
+                </p>
+
+            </div>
+
+            <!-- Reemplaza TU_FORM_ID por la clave que te da Formspree para emiflash2005@gmail.com -->
+            <form
+                id="contactForm"
+                action="https://formspree.io/f/TU_FORM_ID"
+                method="POST"
+                class="contact-form">
+
+                <!-- Asunto personalizado para el correo entrante -->
+                <input type="hidden" name="_subject" value="Nuevo envío de formulario desde cell-ula">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej. Juan Pérez"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@correo.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactoInput">Contacto (Teléfono o WhatsApp)</label>
+                    <input
+                        type="tel"
+                        id="contactoInput"
+                        name="contacto"
+                        placeholder="+52 55 1234 5678"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="4"
+                        placeholder="Escribe tu mensaje o consulta aquí..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn primary full">
+                    Enviar mensaje →
+                </button>
+
+                <div id="formStatus" class="form-status" style="display: none;"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-brand">
+
+            <a href="#inicio" class="logo">
+                cell<span>-ula</span>
+            </a>
+
+            <p>
+                © 2026 cell-ula. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#celulares">Celulares</a>
+            <a href="#garantia">Garantía</a>
+            <a href="#envios">Envíos</a>
+            <a href="#contacto">Contacto</a>
+
+        </div>
+
+
+        <div class="social">
+            <a href="https://wa.me/5215500000000" target="_blank" rel="noopener noreferrer">WhatsApp</a> · Instagram · TikTok · Facebook · X
+        </div>
+
+    </footer>
+
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a 
+        href="https://wa.me/5215500000000?text=Hola,%20tengo%20una%20consulta%20sobre%20cell-ula" 
+        class="whatsapp-float" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp">
+        💬
+    </a>
+
+
+    <!-- OVERLAY -->
+    <div
+        class="overlay"
+        id="overlay">
+    </div>
+
+
+    <!-- CARRITO -->
+    <aside
+        class="cart-panel"
+        id="cartPanel">
+
+        <div class="panel-header">
+
+            <h2>
+                Tu carrito
+            </h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            id="cartItems"
+            class="cart-items">
+
+            <p class="empty">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                $0 MXN
+            </strong>
+
+        </div>
+
+
+        <button
+            class="btn primary full"
+            id="checkoutBtn">
+
+            Continuar al pago
+
+        </button>
+
+    </aside>
+
+
+    <!-- MODAL -->
+    <div
+        class="modal"
+        id="modal">
+
+        <div class="modal-box">
+
+            <button
+                class="modal-close"
+                id="modalClose">
+
+                ×
+
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
