@@ -95,12 +95,22 @@ body {
     text-align: center;
 }
 
-.avatar-wrapper img {
+/* CONTENEDOR DE LA FOTO Y CORRECCIÓN DE DIMENSIONES */
+.avatar-wrapper {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    object-fit: cover;
+    overflow: hidden;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .user-name {
